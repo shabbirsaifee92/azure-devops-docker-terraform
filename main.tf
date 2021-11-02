@@ -12,3 +12,8 @@ terraform {
 provider "azurerm" {
   features { }
 }
+
+resource "azurerm_resource_group" "azure_devops_docker_terrform_rg" {
+  location = "centralus"
+  name = "azure-devops-docker-terrform-rg"
+}
